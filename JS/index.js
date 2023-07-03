@@ -1,5 +1,5 @@
 function solicitudAJAX(params) {
-    var url = "https://pokeapi.co/api/v2/pokemon/";
+var url = "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0";
     let tarjetas = document.querySelector("#nPokemon");
     var objXMLHttpRequest = new XMLHttpRequest();
   
