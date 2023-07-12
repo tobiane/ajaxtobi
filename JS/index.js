@@ -16,9 +16,13 @@ var url = "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0";
           alert("Error Message: " + objXMLHttpRequest.statusText);
         }
       }
+      
     };
     objXMLHttpRequest.open("GET", url);
     objXMLHttpRequest.send();
+    if(i <0 || i !== 0){
+      alert ("no se encontro el pokemon");
+    }
   }
   
   function buscarPorURL(urlPokemon) {
